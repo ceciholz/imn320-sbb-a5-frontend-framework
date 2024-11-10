@@ -1,0 +1,14 @@
+{
+  "name": "imn320-sbb-a5-frontend-framework",
+  "version": "1.0.0",
+  "description": "Assignment 5 - Web Framework",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "",
+  "license": "ISC"
+}
