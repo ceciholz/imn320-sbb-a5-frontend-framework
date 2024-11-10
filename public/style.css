@@ -1,0 +1,10 @@
+
+
+.selectable-card:hover {
+    cursor: pointer;
+    border-color: #3751FF;
+}
+
+.selectable-card:hover * {
+    color: #3751FF !important; 
+}
