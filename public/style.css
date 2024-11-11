@@ -8,3 +8,21 @@
 .selectable-card:hover * {
     color: #3751FF !important; 
 }
+
+.card-no-border-radius-end {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.card-no-border-radius-start {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-no-border-start {
+    border-left: 0px;
+}
+
+.card-no-border {
+    border: 0px;
+}
