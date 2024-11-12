@@ -78,6 +78,46 @@
     padding: 30px;
 }
 
+.selectable-card:hover {
+    cursor: pointer;
+    border-color: #3751FF;
+}
+
+.selectable-card:hover * {
+    color: #3751FF !important; 
+}
+
+.card-no-border-radius-end {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.card-no-border-radius-start {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-no-border-start {
+    border-left: 0px;
+}
+
+.card-no-border {
+    border: 0px;
+}
+
+.graph-indicator {
+    width: 50px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.strong-blue-graph {
+    background-color: #3751FF;
+}
+
+.gray-graph {
+    background-color: lightgray;
+}
 
 @media (min-width: 768px) {
     .sidebar {
@@ -115,30 +155,3 @@
     }
 }
 
-
-.selectable-card:hover {
-    cursor: pointer;
-    border-color: #3751FF;
-}
-
-.selectable-card:hover * {
-    color: #3751FF !important; 
-}
-
-.card-no-border-radius-end {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.card-no-border-radius-start {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-
-.card-no-border-start {
-    border-left: 0px;
-}
-
-.card-no-border {
-    border: 0px;
-}
