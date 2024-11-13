@@ -26,7 +26,7 @@
     width: 100%;
     display: block;
     box-sizing: border-box;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; 
 }
 
 #side_bar .nav-link:hover {
@@ -85,6 +85,12 @@
 .me-2 {
     color: #9FA2B4;
     opacity: 0.4;
+    transition: opacity 0.3s ease color 0.3s ease;
+}
+
+#side_bar .nav-link:hover .me-2 {
+    color: #DDE2FF; 
+    opacity: 1; 
 }
 
 .divider {
