@@ -199,16 +199,17 @@
                  </div>
 
                  <!-- Footer -->
-                 <div class="row">
+                <div class="row">
                     <div class="card col-12 col-md-5 my-4 mx-auto p-4" style="height: 400px;">
-                        <div id="unresolved_card" class="card-body p-0">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div id="unresolved_card" class="card-body p-0 h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h5 class="card-title fw-bold">Unresolved tickets</h5>
                                 <a href="#" class="text-primary">View details</a>
                             </div>
-                            <p class="text-muted">Group: <span class="text-primary">Support</span></p>
-                            <div class="list-group list-group-flush">
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <p class="text-muted">Group: <span class="fw-bold">Support</span></p>
+                            
+                            <div class="list-group list-group-flush flex-grow-1" style="flex: 2 1 auto;">
+                                <div class="list-group-item d-flex justify-content-between align-items-center border-top-0">
                                   <span>Waiting on Feature Request</span>
                                   <span class="text-muted">4238</span>
                                 </div>
@@ -227,44 +228,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card col-12 col-md-5 my-4 mx-auto task-card">
-                        <div class="card-body">
+                    <div class="card col-12 col-md-5 my-4 mx-auto p-4" style="height: 400px;">
+                        <div id="tasks" class="card-body p-0 h-100 d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h5 class="card-title fw-bold">Tasks</h5>
                                 <a href="#" class="text-primary">View all</a>
                             </div>
                             <p class="text-muted">Today</p>
-                    
-                            <p class="text-muted task-placeholder">Create new task <span class="add-task-icon">+</span></p>
-                    
-                            <hr>
-                    
-                            <div class="task-item d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <span class="task-circle"></span>
-                                    <span class="ms-2">Finish ticket update</span>
+
+                            <div class="list-group list-group-flush flex-grow-1" style="flex: 2 1 auto;">
+                                <div class="list-group-item d-flex justify-content-between align-items-center border-top-0">
+                                  <span>Create new task</span>
+                                  <span class="add-task-icon">+</span>
                                 </div>
-                                <span class="badge bg-warning text-dark">URGENT</span>
-                            </div>
-                    
-                            <div class="task-item d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <span class="task-circle"></span>
-                                    <span class="ms-2">Create new ticket example</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="task-circle"></span>
+                                        <span class="ms-2">Finish ticket update</span>
+                                    </div>
+                                    <span class="badge bg-warning text-dark">URGENT</span>
                                 </div>
-                                <span class="badge bg-success">NEW</span>
-                            </div>
-                    
-                            <div class="task-item d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <span class="task-circle checked"></span>
-                                    <span class="ms-2">Update ticket report</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="task-circle"></span>
+                                        <span class="ms-2">Create new ticket example</span>
+                                    </div>
+                                    <span class="badge bg-success">NEW</span>
                                 </div>
-                                <span class="badge bg-secondary">DEFAULT</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="task-circle checked"></span>
+                                        <span class="ms-2">Update ticket report</span>
+                                    </div>
+                                    <span class="badge bg-secondary">DEFAULT</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                 </div>
+                </div>            
             </main>
         </div>
     </div>

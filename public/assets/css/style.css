@@ -154,19 +154,18 @@ main {
 
 
 /* Bottom left of the page */
-
 .list-group-item {
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #E0E0E0; 
+    padding: 20px 0px; 
+    border-left: 0;
+    border-right: 0;
+}
+
+.list-group-item:first-child {
+    border-top: 0; 
 }
 
 .list-group-item:last-child {
-    border-bottom: none;
-}
-
-.card-body.p-0 {
-    padding: 0;
+    border-bottom: 0; 
 }
 
 /* Bottom right of the page */
@@ -233,6 +232,45 @@ main {
     color: #6c757d;
 }
 
+
+/* #unresolved_card, .task-card .card-body {
+    height: 100%; 
+}
+
+.list-group-item, .task-item {
+    border: none; 
+    padding: 0.75rem 1rem; 
+}
+
+.task-placeholder {
+    font-size: 0.875rem;
+    color: #9FA2B4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-task-icon {
+    color: #9FA2B4;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.task-circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #9FA2B4;
+    display: inline-block;
+}
+
+.task-circle.checked {
+    background-color: #3B82F6; 
+}
+
+.task-item hr {
+    margin: 0.5rem 0;
+} */
 
 @media (min-width: 768px) {
     .sidebar {
