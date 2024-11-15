@@ -1,0 +1,242 @@
+/* Variables */
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #363740;
+  font-family: "Mulish", sans-serif;
+  color: #A4A6B3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  padding: 0;
+}
+.sidebar.active {
+  transform: translateX(0);
+}
+.sidebar .sidebar-header {
+  padding-top: 70px;
+}
+.sidebar .nav-link {
+  color: #A4A6B3 !important;
+  border-left: 3px solid transparent;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  padding-left: 20px;
+}
+.sidebar .nav-link:hover {
+  background-color: rgba(159, 162, 180, 0.12);
+  border-color: #fff;
+  color: #DDE2FF !important;
+}
+.sidebar .nav-link:hover .nav-icon {
+  color: #DDE2FF;
+  opacity: 1;
+}
+.sidebar #closeSidebar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1001;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border-radius: 16px;
+}
+.sidebar .text-light {
+  gap: 10px;
+  margin: 5px 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color: #A4A6B3 !important;
+}
+.sidebar .titlelogo {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  margin-left: 15px;
+}
+.sidebar .title-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#burger {
+  background-color: #F7F8FC;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+#menuToggle {
+  font-size: 20px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #363740;
+}
+
+/* Main */
+main {
+  font-family: "Mulish", sans-serif;
+}
+main .selectable-card:hover {
+  cursor: pointer;
+  border-color: #3751FF;
+}
+main .selectable-card:hover * {
+  color: #3751FF !important;
+}
+
+.custom-bg {
+  background-color: #F7F8FC !important;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+/* Card */
+.card-no-border-radius-end {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.card-no-border-radius-start {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.card-no-border-start {
+  border-left: 2px solid #dee2e6;
+}
+
+.card-no-border {
+  border: 0px;
+}
+
+/* Graph Indicators */
+.graph-indicator {
+  width: 50px;
+  height: 5px;
+  border-radius: 3px;
+}
+.graph-indicator.strong-blue-graph {
+  background-color: #3751FF;
+}
+.graph-indicator.gray-graph {
+  background-color: lightgray;
+}
+
+/* Footer */
+.bottomcard {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+}
+
+.list-group-item {
+  padding: 10px 15px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-group-item:first-child {
+  border-top: none;
+}
+
+/* Colors */
+.greycolour {
+  color: #9FA2B4 !important;
+}
+
+.tasks {
+  color: rgb(216.2631578947, 217.4736842105, 224.7368421053);
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 50% !important;
+  position: relative;
+  outline: none;
+}
+
+.status-button {
+  width: 85px;
+  height: 24px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 0;
+}
+.status-button.new-color {
+  background-color: #29CC97 !important;
+  color: #fff !important;
+}
+.status-button.default-color {
+  background-color: #F0F1F7 !important;
+  color: #9FA2B4 !important;
+}
+.status-button.urgent-color {
+  background-color: #FEC400 !important;
+  color: #fff !important;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    transform: translateX(0);
+    overflow-y: auto;
+  }
+  .sidebar .nav-link {
+    height: 50px;
+    padding-left: 25px;
+  }
+  .sidebar .sidebar-header {
+    display: flex;
+    padding-top: 35px;
+  }
+  .sidebar .title-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #A4A6B3;
+  }
+  .sidebar .titlelogo {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+  .sidebar .text-light {
+    font-size: 20px;
+  }
+  #menuToggle {
+    display: none;
+  }
+  .card-no-border-radius-end {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-no-border-radius-start {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .card-no-border-start {
+    border-left: 0;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

@@ -36,4 +36,25 @@ document.addEventListener("DOMContentLoaded", function() {
   
     handleResize();
 });
+
+function updateStatus(event, status) {
+  event.preventDefault();
   
+
+  const statusButton = event.target.closest(".dropdown").querySelector(".status-button");
+
+
+  statusButton.classList.remove("default-color", "new-color", "urgent-color");
+
+
+  if (status === "NEW") {
+      statusButton.classList.add("new-color");
+      statusButton.textContent = "NEW";
+  } else if (status === "URGENT") {
+      statusButton.classList.add("urgent-color");
+      statusButton.textContent = "URGENT";
+  } else {
+      statusButton.classList.add("default-color");
+      statusButton.textContent = "DEFAULT";
+  }
+}
