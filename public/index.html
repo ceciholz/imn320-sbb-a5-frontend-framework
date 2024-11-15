@@ -20,9 +20,11 @@
     <title>Assigment 5 - Bootstrap Exercise</title>
 </head>
 <body>
-    <button id="menuToggle" class="btn btn-dark d-md-none">
-        ☰
-    </button>
+    <div id="burger" class="d-md-none">
+        <button id="menuToggle" class="btn btn-dark d-md-none">
+            ☰
+        </button>
+    </div>
     <!-- Creating external container to separate the layout in columns -->
     <div class="container-fluid">
         <div class="row">
@@ -92,8 +94,8 @@
 
 
             <main class="col px-md-4 main-content custom-bg">
-                 <header>
-                    <div class="row mx-4 mb-4 mt-4">
+                <header>
+                    <div class="row mx-4 mb-4 mt-1">
                         <div class="col-12 col-md-6">
                             <h4 class="text-center text-md-start">Overview</h4>
                         </div>
@@ -105,9 +107,9 @@
                             <i class="bi bi-person-circle mx-2 fs-4"></i>
                         </div>
                     </div>
-                 </header>
+                </header>
                 <div class="row">
-                    <div class="card text-center col-12 col-md-2 mx-auto pt-3 pb-4 selectable-card">
+                    <div class="card text-center col-12 col-md-2 mx-auto py-3 selectable-card">
                         <div class="card-body">
                           <h5 class="card-title text-secondary">Unresolved</h5>
                           <p class="card-text text-dark h1 fw-bold">60</p>
@@ -200,72 +202,81 @@
 
                  <!-- Footer -->
                 <div class="row">
-                    <div class="card col-12 col-md-5 my-4 mx-auto p-4" style="height: 400px;">
-                        <div id="unresolved_card" class="card-body p-0 h-100 d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
+                    <!-- first Card -->
+                    <div class="card col-12 col-md-5 mx-auto p-0 mb-4 mb-md-0">
+                        <div class="card-body d-flex flex-column pb-1 bottomcard">
+                            <!-- First section : Title -->
+                            <div class="d-flex justify-content-between align-items-center ps-4 pe-4 pt-4 mb-0">
                                 <h5 class="card-title fw-bold">Unresolved tickets</h5>
                                 <a href="#" class="text-primary">View details</a>
                             </div>
-                            <p class="text-muted">Group: <span class="fw-bold">Support</span></p>
+                            <!-- Second section : Subtitle -->
+                            <p class="text-muted mb-3 ps-4 pt-0">Group: <span class="fw-bold">Support</span></p>
                             
-                            <div class="list-group list-group-flush flex-grow-1" style="flex: 2 1 auto;">
-                                <div class="list-group-item d-flex justify-content-between align-items-center border-top-0">
-                                  <span>Waiting on Feature Request</span>
-                                  <span class="text-muted">4238</span>
+                            <!-- Last section -->
+                            <div class="list-group list-group-flush flex-grow-1 d-flex flex-column">
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill border-top-0 ps-4 pe-4">
+                                    <span>Waiting on Feature Request</span>
+                                    <span class="text-muted">4238</span>
                                 </div>
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span>Awaiting Customer Response</span>
-                                  <span class="text-muted">1005</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill ps-4 pe-4">
+                                    <span>Awaiting Customer Response</span>
+                                    <span class="text-muted">1005</span>
                                 </div>
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span>Awaiting Developer Fix</span>
-                                  <span class="text-muted">914</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill ps-4 pe-4">
+                                    <span>Awaiting Developer Fix</span>
+                                    <span class="text-muted">914</span>
                                 </div>
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                  <span>Pending</span>
-                                  <span class="text-muted">281</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill ps-4 pe-4">
+                                    <span>Pending</span>
+                                    <span class="text-muted">281</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card col-12 col-md-5 my-4 mx-auto p-4" style="height: 400px;">
-                        <div id="tasks" class="card-body p-0 h-100 d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
+                    
+                    <!-- Second Card -->
+                    <div class="card col-12 col-md-5 mx-auto p-0">
+                        <div class="card-body d-flex flex-column pb-1 bottomcard">
+                            <!-- First section : Title -->
+                            <div class="d-flex justify-content-between align-items-center ps-4 pe-4 pt-4 mb-0">
                                 <h5 class="card-title fw-bold">Tasks</h5>
                                 <a href="#" class="text-primary">View all</a>
                             </div>
-                            <p class="text-muted">Today</p>
-
-                            <div class="list-group list-group-flush flex-grow-1" style="flex: 2 1 auto;">
-                                <div class="list-group-item d-flex justify-content-between align-items-center border-top-0">
-                                  <span>Create new task</span>
-                                  <span class="add-task-icon">+</span>
+                            <!-- Second section : Subtitle -->
+                            <p class="text-muted mb-3 ps-4 pt-0">Today</p>
+                            
+                            <!-- Last section -->
+                            <div class="list-group list-group-flush flex-grow-1 d-flex flex-column">
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill border-top-0 ps-4 pe-4">
+                                    <span>Create new task</span>
+                                    <span class="text-muted">+</span>
                                 </div>
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <span class="task-circle"></span>
-                                        <span class="ms-2">Finish ticket update</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill ps-4 pe-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" type="checkbox" id="task1">
+                                        <label class="form-check-label" for="task1">Finish ticket update</label>
                                     </div>
                                     <span class="badge bg-warning text-dark">URGENT</span>
                                 </div>
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <span class="task-circle"></span>
-                                        <span class="ms-2">Create new ticket example</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill ps-4 pe-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" type="checkbox" id="task2">
+                                        <label class="form-check-label" for="task2">Create new ticket example</label>
                                     </div>
                                     <span class="badge bg-success">NEW</span>
                                 </div>
-                                <div class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <span class="task-circle checked"></span>
-                                        <span class="ms-2">Update ticket report</span>
+                                <div class="list-group-item d-flex justify-content-between align-items-center flex-fill ps-4 pe-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" type="checkbox" id="task3" checked>
+                                        <label class="form-check-label" for="task3">Update ticket report</label>
                                     </div>
                                     <span class="badge bg-secondary">DEFAULT</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>            
+                </div>                
             </main>
         </div>
     </div>
