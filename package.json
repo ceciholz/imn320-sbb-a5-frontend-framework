@@ -10,8 +10,8 @@
   "main": "index.js",
   "scripts": {
     "cecilhannah": "lite-server --baseDir=\"public\"",
-    "start": "concurrently \"npm run cecilhannah\" \"npm run amandaisawesome\"",
-    "amandaisawesome": "sass --watch src/scss:public/assets/css"
+    "start": "concurrently \"npm run cecilhannah\" \"npm run scss\"",
+    "sass": "scss --watch src/scss:public/assets/css"
   },
   "author": "",
   "license": "ISC"
